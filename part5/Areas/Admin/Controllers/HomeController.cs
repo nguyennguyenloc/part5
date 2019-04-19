@@ -8,10 +8,14 @@ namespace part5.Areas.Admin.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Admin/Home
         public ActionResult Index()
         {
+            if (Session["UserId"] == null || Session["UserId"].ToString() == null)
+            {
+                return Redirect("/Admin/Login");
+            }
             return View();
         }
+
     }
 }

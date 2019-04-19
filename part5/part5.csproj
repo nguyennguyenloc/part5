@@ -157,6 +157,7 @@
     <Content Include="Areas\Admin\Assets\js\demo\datatables-demo.js" />
     <Content Include="Areas\Admin\Assets\js\sb-admin-2.js" />
     <Content Include="Areas\Admin\Assets\js\sb-admin-2.min.js" />
+    <Content Include="Areas\Admin\Assets\resource\Data.sql" />
     <Content Include="Areas\Admin\Assets\vendor\bootstrap\js\bootstrap.bundle.js" />
     <Content Include="Areas\Admin\Assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Areas\Admin\Assets\vendor\bootstrap\js\bootstrap.js" />
@@ -3333,6 +3334,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Assets\resource\SQL.docx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -3605,6 +3607,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\part5.service\part5.service.csproj">
+      <Project>{62846FA4-47AE-4BC0-B9AD-6F6D20E0BAAD}</Project>
+      <Name>part5.service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
