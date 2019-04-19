@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Web", "1.Web", "{00BA5746-509F-4159-8A1C-522FF4E67797}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Services", "2.Services", "{D27D9CC9-E820-4B05-995E-714E84ED5CE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Data", "3.Data", "{301AA9B6-F802-4859-AAA3-B087032F0D3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Cross", "4.Cross", "{B22AB23F-7605-4680-B848-A879FC6CD252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "part5", "part5\part5.csproj", "{126EEF4B-7CC3-4057-8106-C6228A0BD3B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{126EEF4B-7CC3-4057-8106-C6228A0BD3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126EEF4B-7CC3-4057-8106-C6228A0BD3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126EEF4B-7CC3-4057-8106-C6228A0BD3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126EEF4B-7CC3-4057-8106-C6228A0BD3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{126EEF4B-7CC3-4057-8106-C6228A0BD3B7} = {00BA5746-509F-4159-8A1C-522FF4E67797}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B3834F7-2ABB-4AD8-A26F-AA40DD049364}
+	EndGlobalSection
+EndGlobal
