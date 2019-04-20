@@ -42,10 +42,10 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Xin chào</h1>
                                     </div>
                                     <form action="/Admin/Login/LoginByCredential" method="post" class="user">
-                                        @Html.ValidationSummary("LoginError")
+
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user" id="Username" name="Username" placeholder="Username">
                                         </div>
@@ -55,9 +55,11 @@
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Đăng nhập
                                         </button>
-                                        <hr>
+                                        <div class="text-center">
+                                            @Html.ValidationSummary()
+                                        </div>
                                     </form>
-                                    <hr>
+                                    
                                 </div>
                             </div>
                         </div>

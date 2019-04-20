@@ -1,4 +1,5 @@
-﻿using part5.service;
+﻿using part5.core;
+using part5.service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +20,12 @@ namespace part5.Areas.Admin.Controllers
             return View();
         }
 
-        public ActionResult LoginByCredential(string Username, string Password)
+        public ActionResult LoginByCredential(UserLoginModel model)
         {
             UserService userService = new UserService();
             if (ModelState.IsValid)
             {
-                var login = userService.LoginByCredential(Username, Password);/*add part3.data*/
+                var login = userService.LoginByCredential(model.Username, model.Password);
                 if (login == null)
                 {
                     ModelState.AddModelError("LoginError", "Đăng nhập không thành công");
@@ -43,6 +44,11 @@ namespace part5.Areas.Admin.Controllers
             }
             return View("Index");
         }
-    }
+        public ActionResult Logout()
+        {
+            Session.Clear();
+            return Redirect("/Admin/Login");
+        }
 
+    }
 }
