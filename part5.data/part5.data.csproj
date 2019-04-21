@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\CustomerDAL.cs" />
+    <Compile Include="DAL\PostDAL.cs" />
     <Compile Include="DAL\UserDAL.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Customer.cs" />
@@ -69,6 +70,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\part5.core\part5.core.csproj">
+      <Project>{AF3F0915-D868-4B66-9E30-DC3958FD681A}</Project>
+      <Name>part5.core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
